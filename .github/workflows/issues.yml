@@ -1,0 +1,8 @@
+name: Issue details
+on: [issues, workflow_dispatch]
+jobs:
+  event-details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo details
+        runs: echo "${{ github.event }}"
